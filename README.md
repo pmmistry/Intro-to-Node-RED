@@ -27,6 +27,8 @@ Presenter: [Pooja Mistry](https://github.com/pmmistry)
 4. Press the Red Deploy button in the top Right corner. Press the blue Inject. The Hello World string will appear in the Debug area.
 ![Hello World](/Screenshots/HelloWorld-Inject-annotated.png?raw=true "Hello World")
 
+flow can be found [HelloWorld](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/helloWorld.flow)
+
 
 *This flow describes how to use the language translation node:*
 1. Drag a Language Translation node from the palette.
@@ -34,6 +36,8 @@ Presenter: [Pooja Mistry](https://github.com/pmmistry)
 3. Connect the Language Translation node in between the Inject node and the debug node 
 4. Press the Red Deploy button in the top Right corner. Press the blue Inject. The string from the inject node will appear in the Debug area along with the translated text.
 ![Language Translation](/Screenshots/IchbineinBerliner-Translate-annotated.png?raw=true "Ich bin ein Berliner")
+
+flow can be found [HelloWorldGerman](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/helloWorldGerman.flow)
 
 
 
