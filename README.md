@@ -46,4 +46,8 @@ flow can be found [HelloWorldGerman](https://github.com/pmmistry/Intro-to-Node-R
 ```
 var newString = msg.payload.replace("World","Everyone , I hope you enjoy Node Red ");
 
-return {payload : newString};```
+return {payload : newString};
+```
+This example replaces World with `Everyone, I hope you enjoy Node Red  ` 
+3. Press red Deploy on the right corner and see : 
+![Hello World Replace](/Screenshots/HelloWorldReplace.png.?raw=true)
