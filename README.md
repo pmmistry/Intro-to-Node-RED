@@ -51,7 +51,7 @@ return {payload : newString};
 This example replaces World with `Everyone, I hope you enjoy Node Red  ` 
 
 3. Press red Deploy on the right corner and see : 
-![Language Translation](/Screenshots/HelloWorldReplace.png?raw=true "Hello World Replace")
+![Hello Replace](/Screenshots/HelloWorldReplace.png?raw=true "Hello World Replace")
 
 flow can be found in [HelloWorldReplace](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/helloReplace.flow)
 
@@ -64,6 +64,10 @@ flow can be found in [HelloWorldReplace](https://github.com/pmmistry/Intro-to-No
 	- Create your own application at ` developer.twitter.com/en/apps` 
 	- Submit your API Keys and Access Tokens 
 3. Once Twitter set up is complete you can receive tweets from hashtags, ids and any strings 
+4. Press red Deploy button and see : 
+![Twitter](/Screenshots/TwitterExample.png?raw=true "Twitter Example")
+
+
 
 
 
