@@ -1,0 +1,194 @@
+<head>
+  <meta name="viewport" content="width=320, initial-scale=1">
+  <title>Chat</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="chat_box" class="content"></div>
+
+    <div id="footer">
+      <div class="content">
+        <input type="text" id="user" placeholder="What is your name?" />
+        <input type="text" id="message" placeholder="What do you want to say?" />
+        <input type="button" id="send_btn" value="Send" onclick="sendMessage()">
+      </div>
+    </div>
+  </div>
+</body>
+
+<script type="text/javascript">
+  var wsUri = "wss://{{req.headers.host}}/ws/chat";
+  var ws = new WebSocket(wsUri);
+
+  function createSystemMessage(message) {
+    var message = document.createTextNode(message);
+
+    var messageBox = document.createElement('p');
+    messageBox.className = 'system';
+
+    messageBox.appendChild(message);
+
+    var chat = document.getElementById('chat_box');
+    chat.appendChild(messageBox);
+  }
+
+  function createUserMessage(user, message) {
+    var user = document.createTextNode(user + ': ');
+
+    var userBox = document.createElement('span');
+    userBox.className = 'username';
+    userBox.appendChild(user);
+
+    var message = document.createTextNode(message);
+
+    var messageBox = document.createElement('p');
+    messageBox.appendChild(userBox);
+    messageBox.appendChild(message);
+
+    var chat = document.getElementById('chat_box');
+    chat.appendChild(messageBox);
+  }
+
+  ws.onopen = function(ev) {
+    createSystemMessage('[Connected]');
+  };
+
+  ws.onclose = function(ev) {
+    createSystemMessage('[Disconnected]');
+  }
+
+  ws.onmessage = function(ev) {
+    var payload = JSON.parse(ev.data);
+    createUserMessage(payload.user, payload.message);
+
+    var chat = document.getElementById('chat_box');
+    chat.scrollTop = chat.scrollHeight;
+  }
+
+  function sendMessage() {
+    var user = document.getElementById('user');
+    var message = document.getElementById('message');
+
+    var payload = {
+      message: message.value,
+      user: user.value,
+      ts: (new Date()).getTime()
+    };
+
+    ws.send(JSON.stringify(payload));
+    message.value = "";
+  };
+</script>
+
+<style type="text/css">
+  * {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-style: italic;
+    font-size: 20px;
+  }
+
+  html, body, #wrapper {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  #wrapper {
+    background-color: #ecf0f1;
+  }
+
+  #chat_box {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 50px;
+  }
+
+  #footer {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #2980b9;
+  }
+
+  #footer .content {
+    padding-top: 4px;
+    position: relative;
+  }
+
+  #user { width: 20%; }
+  #message { width: 68%; }
+  #send_btn {
+    width: 10%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+  }
+
+  .content {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  input[type="text"],
+  input[type="button"] {
+    border: 0;
+    color: #fff;
+  }
+
+  input[type="text"] {
+    background-color: #146EA8;
+    padding: 3px 10px;
+  }
+
+  input[type="button"] {
+    background-color: #f39c12;
+    border-right: 2px solid #e67e22;
+    border-bottom: 2px solid #e67e22;
+    min-width: 70px;
+    display: inline-block;
+  }
+
+  input[type="button"]:hover {
+    background-color: #e67e22;
+    border-right: 2px solid #f39c12;
+    border-bottom: 2px solid #f39c12;
+    cursor: pointer;
+  }
+
+  .system,
+  .username {
+    color: #aaa;
+    font-style: italic;
+    font-family: monospace;
+    font-size: 16px;
+  }
+
+  @media(max-width: 1000px) {
+    .content { width: 90%; }
+  }
+
+  @media(max-width: 780px) {
+    #footer { height: 91px; }
+    #chat_box { padding-bottom: 91px; }
+
+    #user { width: 100%; }
+    #message { width: 80%; }
+  }
+
+  @media(max-width: 400px) {
+    #footer { height: 135px; }
+    #chat_box { padding-bottom: 135px; }
+
+    #message { width: 100%; }
+    #send_btn {
+      position: relative;
+      margin-top: 3px;
+      width: 100%;
+    }
+  }
+</style>
