@@ -51,5 +51,5 @@ return {payload : newString};
 This example replaces World with `Everyone, I hope you enjoy Node Red  ` 
 
 3. Press red Deploy on the right corner and see : 
+![Language Translation](/Screenshots/IchbineinBerliner-Translate-annotated.png?raw=true "Ich bin ein Berliner")
 
-![Hello World Replace](/Screenshots/HelloWorldReplace.png.?raw=true "Hello World Replace")
