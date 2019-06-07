@@ -42,9 +42,8 @@ flow can be found [HelloWorldGerman](https://github.com/pmmistry/Intro-to-Node-R
 
 *This flow describes how to use the function node to perform a function* 
 1. Drag the function node from the palette and connect it between the inject node and debug node
-2. Double click on the function node and add code in the function input, 
-```var newString = msg.payload.replace("World","Everyone , I hope you enjoy Node Red ");
+2. Double click on the function node and add code in the function input, e.g: 
+```
+var newString = msg.payload.replace("World","Everyone , I hope you enjoy Node Red ");
+
 return {payload : newString};```
-
-
-
