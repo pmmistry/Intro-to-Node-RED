@@ -67,6 +67,33 @@ flow can be found in [HelloWorldReplace](https://github.com/pmmistry/Intro-to-No
 4. Press red Deploy button and see : 
 ![Twitter](/Screenshots/TwitterExample.png?raw=true "Twitter Example")
 
+flow can be found in [Twitter Example](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/twitter.flow)
+
+
+**This flow describes how to use the Weather Insights , Language translator , and Speech to Text**
+
+This flow speaks the Berlin weather forecast in German  
+	- Call the Weather Insights for the forecast in Berlin.
+	- Builds a sentence
+	- Call language translation to convert to German
+	- Call Text to Speech to generate a WAV file
+	- Plays the weather forecast in a German voice
+![Weather Forecast](/Screenshots/WeatherForecastinGerman.png?raw=true "Speak the Berlin weather forecast in German")
+
+flow can be found in [Weather](https://github.com/pmmistry/Intro-to-Node-RED/tree/master/Flows)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
