@@ -6,9 +6,9 @@ It provides lot of tools and plugins which supports almost everything related to
 ## Workshop Topics Outline :
 1. Creating a IBM Cloud Account 
 2. IBM Cloud Overview 
-	- [How to Create an IBM Cloud Account]
-	- [How to Get Access to Node-Red on IBM Cloud]
-	- [How to request Access to Services]
+	- [How to Create an IBM Cloud Account](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/helloReplace.flow)
+	- [How to Get Access to Node-Red on IBM Cloud](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/helloReplace.flow)
+	- [How to request Access to Services](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/helloReplace.flow)
 3. Node-RED Overview  
  	- Concept of flows and nodes 
  	- Input & Outputs 
@@ -32,7 +32,7 @@ flow can be found [HelloWorld](https://github.com/pmmistry/Intro-to-Node-RED/blo
 
 **This flow describes how to use the language translation node:**
 1. Drag a Language Translation node from the palette.
-2. Double click on the Language Translation node and select German (Language Translation Set up can be found in : [How to request Access to Services] )
+2. Double click on the Language Translation node and select German (Language Translation Set up can be found in : [How to request Access to Services](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/helloReplace.flow) )
 3. Connect the Language Translation node in between the Inject node and the debug node 
 4. Press the Red Deploy button in the top Right corner. Press the blue Inject. The string from the inject node will appear in the Debug area along with the translated text.
 ![Language Translation](/Screenshots/IchbineinBerliner-Translate-annotated.png?raw=true "Ich bin ein Berliner")
@@ -52,6 +52,8 @@ This example replaces World with `Everyone, I hope you enjoy Node Red  `
 
 3. Press red Deploy on the right corner and see : 
 ![Language Translation](/Screenshots/HelloWorldReplace.png?raw=true "Hello World Replace")
+
+flow can be found in [HelloWorldReplace](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/helloReplace.flow)
 
 **This flow describes how to use twitter as an input**
 1. Drag the twitter input node from the palette and connect it with the debug message node 
