@@ -6,9 +6,9 @@ It provides lot of tools and plugins which supports almost everything related to
 ## Workshop Topics Outline :
 1. Creating a IBM Cloud Account 
 2. IBM Cloud Overview 
-	- How to Create an IBM Cloud Account 
-	- How to Get Access to Node-Red on IBM Cloud 
-	- How to request Access to Services 
+	- [How to Create an IBM Cloud Account]
+	- [How to Get Access to Node-Red on IBM Cloud]
+	- [How to request Access to Services]
 3. Node-RED Overview  
  	- Concept of flows and nodes 
  	- Input & Outputs 
@@ -20,7 +20,7 @@ Presenter: [Pooja Mistry](https://github.com/pmmistry)
 
 
 ## Node-RED flows in this repository: 
-*This flow describes how to create the basic Hello World in a few steps.*
+**This flow describes how to create the basic Hello World in a few steps.**
 1. Drag an Inject node from the palette
 2. Drag a Debug node from the palette and wire the two nodes together
 3. Double click on the Inject node and change it to inject an A-Z String "Hello World"
@@ -30,9 +30,9 @@ Presenter: [Pooja Mistry](https://github.com/pmmistry)
 flow can be found [HelloWorld](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/helloWorld.flow)
 
 
-*This flow describes how to use the language translation node:*
+**This flow describes how to use the language translation node:**
 1. Drag a Language Translation node from the palette.
-2. Double click on the Language Translation node and select German
+2. Double click on the Language Translation node and select German (Language Translation Set up can be found in : [How to request Access to Services] )
 3. Connect the Language Translation node in between the Inject node and the debug node 
 4. Press the Red Deploy button in the top Right corner. Press the blue Inject. The string from the inject node will appear in the Debug area along with the translated text.
 ![Language Translation](/Screenshots/IchbineinBerliner-Translate-annotated.png?raw=true "Ich bin ein Berliner")
@@ -40,7 +40,7 @@ flow can be found [HelloWorld](https://github.com/pmmistry/Intro-to-Node-RED/blo
 flow can be found [HelloWorldGerman](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/helloWorldGerman.flow)
 
 
-*This flow describes how to use the function node to perform a function* 
+**This flow describes how to use the function node to perform a function**
 1. Drag the function node from the palette and connect it between the inject node and debug node
 2. Double click on the function node and add code in the function input, e.g: 
 ```
@@ -51,5 +51,17 @@ return {payload : newString};
 This example replaces World with `Everyone, I hope you enjoy Node Red  ` 
 
 3. Press red Deploy on the right corner and see : 
-![Language Translation](/Screenshots/HelloWorldReplace.png?raw=true "Ich bin ein Berliner")
+![Language Translation](/Screenshots/HelloWorldReplace.png?raw=true "Hello World Replace")
+
+**This flow describes how to use twitter as an input**
+1. Drag the twitter input node from the palette and connect it with the debug message node 
+2. Double click on the twitter node and set up twitter authentication 
+	- Steps to set up Twitter 
+	- Click on the little pencil button next to Twitter ID field 
+	- Add Twitter ID 
+	- Create your own application at ` developer.twitter.com/en/apps` 
+	- Submit your API Keys and Access Tokens 
+3. Once Twitter set up is complete you can receive tweets from hashtags, ids and any strings 
+
+
 
