@@ -20,7 +20,7 @@ Presenter: [Pooja Mistry](https://github.com/pmmistry)
 
 
 ## Node-RED flows in this repository: 
-**This flow describes how to create the basic Hello World in a few steps.**
+** 1. This flow describes how to create the basic Hello World in a few steps.**
 1. Drag an Inject node from the palette
 2. Drag a Debug node from the palette and wire the two nodes together
 3. Double click on the Inject node and change it to inject an A-Z String "Hello World"
@@ -30,7 +30,7 @@ Presenter: [Pooja Mistry](https://github.com/pmmistry)
 flow can be found [HelloWorld](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/helloWorld.flow)
 
 
-**This flow describes how to use the language translation node:**
+** 2. This flow describes how to use the language translation node:**
 1. Drag a Language Translation node from the palette.
 2. Double click on the Language Translation node and select German (Language Translation Set up can be found in : [How to request Access to Services](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/helloReplace.flow) )
 3. Connect the Language Translation node in between the Inject node and the debug node 
@@ -40,7 +40,7 @@ flow can be found [HelloWorld](https://github.com/pmmistry/Intro-to-Node-RED/blo
 flow can be found [HelloWorldGerman](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/helloWorldGerman.flow)
 
 
-**This flow describes how to use the function node to perform a function**
+** 3. This flow describes how to use the function node to perform a function**
 1. Drag the function node from the palette and connect it between the inject node and debug node
 2. Double click on the function node and add code in the function input, e.g: 
 ```
@@ -55,7 +55,7 @@ This example replaces World with `Everyone, I hope you enjoy Node Red  `
 
 flow can be found in [HelloWorldReplace](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/helloReplace.flow)
 
-**This flow describes how to use twitter as an input**
+** 4. This flow describes how to use twitter as an input**
 1. Drag the twitter input node from the palette and connect it with the debug message node 
 2. Double click on the twitter node and set up twitter authentication 
 	- Steps to set up Twitter 
@@ -70,7 +70,7 @@ flow can be found in [HelloWorldReplace](https://github.com/pmmistry/Intro-to-No
 flow can be found in [Twitter Example](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/twitter.flow)
 
 
-**This flow describes how to use the Weather Insights , Language translator , and Speech to Text**
+** 5. This flow describes how to use the Weather Insights , Language translator , and Speech to Text**
 
 This flow speaks the Berlin weather forecast in German  
 	- Call the Weather Insights for the forecast in Berlin.
@@ -82,6 +82,27 @@ This flow speaks the Berlin weather forecast in German
 
 flow can be found in [Weather](https://github.com/pmmistry/Intro-to-Node-RED/tree/master/Flows)
 
+** 6. This flow describes how to build a chat service in a browser *** 
+1. Drag the http node and create a Get Request 
+```
+Set Method to GET 
+Set URL to /chat 
+```
+2. Drag the template node and insert chat source code. Connect with Get Request
+souce code can be found at  [Chat Service Source Code](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/chatSourceCode.html)
+
+3. Drag http response node and connect with template node 
+
+4. Drag Websocket node to listen to http request node
+5. Drag Funtion node and connect to websocket node 
+```
+delete msg._session;
+return msg;
+```
+6. Drag websocket out node and listen on /ws/chat 
+
+![ChatService](/Screenshots/Chat.png?raw=true "Chat Service")
+![ChatService2](/Screenshots/ChatService.png?raw=true "Chat Service on the Browser")
 
 
 
