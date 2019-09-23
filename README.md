@@ -166,20 +166,20 @@ return msg;
 
 ![ChatService](/Screenshots/Chat.png?raw=true "Chat Service")
 ![ChatService2](/Screenshots/ChatService.png?raw=true "Chat Service on the Browser")
-**Import flow from here : **
+**Import flow from here :** 
 
 ### 8. Simple Dashboard
 This flow describes how to build a UI with the use of `node-red-dashboard` nodes 
 We will need to install `node-red-dashboard` from manage pallet 
 ![](https://paper-attachments.dropbox.com/s_49EBF2EB36746BBC00471930A737A626223590B94A1CAFB75A0CD643C5F6FAAB_1569263698690_Screen+Shot+2019-09-23+at+2.23.21+PM.png)
 
-**Import flow from here** : 
+**Import flow from here :**
 
 ### 9. Sentiment Dashboard
 This flow describes how we can measure the sentiment of incoming text 
 ![](https://paper-attachments.dropbox.com/s_49EBF2EB36746BBC00471930A737A626223590B94A1CAFB75A0CD643C5F6FAAB_1569263733561_Screen+Shot+2019-09-23+at+2.33.39+PM.png)
 
-**Import flow from here** : 
+**Import flow from here :** 
 
 ### 10. Twitter Input 
 1. Drag the twitter input node from the palette and connect it with the debug message node 
@@ -193,7 +193,7 @@ This flow describes how we can measure the sentiment of incoming text
 4. Press red Deploy button and see : 
 ![Twitter](/Screenshots/TwitterExample.png?raw=true "Twitter Example")
 
-flow can be found in [Twitter Example](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/twitter.flow)
+**Import flow from here :** [Twitter Example](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/twitter.flow)
 
 
 
