@@ -59,7 +59,7 @@ This example replaces World with `Everyone, I hope you enjoy Node Red  `
 
 ![](https://paper-attachments.dropbox.com/s_47B19C1398BE4DA15B3A75EC8B94D22D2E4AA20C6FFB4054F0EB3B366D945110_1569262059697_Screen+Shot+2019-09-23+at+1.55.20+PM.png)
 
-**Import flow from here :**
+**Import flow from here :**  [HelloWorldSpeech](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/languagespeach.flow)
 
 ### 5. This flow describes how to use the Weather Insights , Language translator , and Speech to Text
 
@@ -174,13 +174,15 @@ This flow describes how to build a UI with the use of `node-red-dashboard` nodes
 We will need to install `node-red-dashboard` from manage pallet 
 ![](https://paper-attachments.dropbox.com/s_49EBF2EB36746BBC00471930A737A626223590B94A1CAFB75A0CD643C5F6FAAB_1569263698690_Screen+Shot+2019-09-23+at+2.23.21+PM.png)
 
-**Import flow from here :**
+**Import flow from here :** [Dashboard](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/dashboard.flow)
+
 
 ### 9. Sentiment Dashboard
 This flow describes how we can measure the sentiment of incoming text 
 ![](https://paper-attachments.dropbox.com/s_49EBF2EB36746BBC00471930A737A626223590B94A1CAFB75A0CD643C5F6FAAB_1569263733561_Screen+Shot+2019-09-23+at+2.33.39+PM.png)
 
-**Import flow from here :** 
+**Import flow from here :** [Sentiment Dashboard](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/sentimentdashboard.flow)
+
 
 ### 10. Twitter Input 
 1. Drag the twitter input node from the palette and connect it with the debug message node 
@@ -195,18 +197,3 @@ This flow describes how we can measure the sentiment of incoming text
 ![Twitter](/Screenshots/TwitterExample.png?raw=true "Twitter Example")
 
 **Import flow from here :** [Twitter Example](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/twitter.flow)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
