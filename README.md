@@ -54,7 +54,7 @@ flow can be found in [HelloWorldReplace](https://github.com/pmmistry/Intro-to-No
 flow can be found [HelloWorldGerman](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/helloWorldGerman.flow)
 
 
-###  4 . Hello World in Spanish - Convert Text to Speech 
+### 4 . Hello World in Spanish - Convert Text to Speech 
 
 
 ![](https://paper-attachments.dropbox.com/s_47B19C1398BE4DA15B3A75EC8B94D22D2E4AA20C6FFB4054F0EB3B366D945110_1569262059697_Screen+Shot+2019-09-23+at+1.55.20+PM.png)
@@ -75,7 +75,7 @@ flow can be found
 flow can be found in [Twitter Example](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/twitter.flow)
 
 
-### 5. This flow describes how to use the Weather Insights , Language translator , and Speech to Text
+### 6. This flow describes how to use the Weather Insights , Language translator , and Speech to Text
 
 This flow speaks the Berlin weather forecast in German  
 	- Call the Weather Insights for the forecast in Berlin.
@@ -87,7 +87,7 @@ This flow speaks the Berlin weather forecast in German
 
 flow can be found in [Weather](https://github.com/pmmistry/Intro-to-Node-RED/tree/master/Flows)
 
-### 6. This flow describes how to build a chat service in a browser 
+### 7. This flow describes how to build a chat service in a browser 
 1. Drag the http node and create a Get Request 
 ```
 Set Method to GET 
