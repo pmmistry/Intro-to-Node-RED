@@ -60,22 +60,8 @@ flow can be found [HelloWorldGerman](https://github.com/pmmistry/Intro-to-Node-R
 ![](https://paper-attachments.dropbox.com/s_47B19C1398BE4DA15B3A75EC8B94D22D2E4AA20C6FFB4054F0EB3B366D945110_1569262059697_Screen+Shot+2019-09-23+at+1.55.20+PM.png)
 
 flow can be found 
-### 5. This flow describes how to use twitter as an input
-1. Drag the twitter input node from the palette and connect it with the debug message node 
-2. Double click on the twitter node and set up twitter authentication 
-	- Steps to set up Twitter 
-	- Click on the little pencil button next to Twitter ID field 
-	- Add Twitter ID 
-	- Create your own application at ` developer.twitter.com/en/apps` 
-	- Submit your API Keys and Access Tokens 
-3. Once Twitter set up is complete you can receive tweets from hashtags, ids and any strings 
-4. Press red Deploy button and see : 
-![Twitter](/Screenshots/TwitterExample.png?raw=true "Twitter Example")
 
-flow can be found in [Twitter Example](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/twitter.flow)
-
-
-### 6. This flow describes how to use the Weather Insights , Language translator , and Speech to Text
+### 5. This flow describes how to use the Weather Insights , Language translator , and Speech to Text
 
 This flow speaks the Berlin weather forecast in German  
 	- Call the Weather Insights for the forecast in Berlin.
@@ -87,6 +73,77 @@ This flow speaks the Berlin weather forecast in German
 
 flow can be found in [Weather](https://github.com/pmmistry/Intro-to-Node-RED/tree/master/Flows)
 
+### 6. Webpage 
+![](https://paper-attachments.dropbox.com/s_47B19C1398BE4DA15B3A75EC8B94D22D2E4AA20C6FFB4054F0EB3B366D945110_1569262682714_Screen+Shot+2019-09-23+at+2.17.45+PM.png)
+
+
+This is a simple webpage 
+
+Template Code : 
+```
+    <html>
+        <head>
+            <title>Hello World</title>
+        </head>
+        <body>
+            <div><h1>This is a simple Webpage in Node-RED</h1></div>
+            <div id="id_hello">
+               <span>Hello</span>
+               &nbsp;
+               <span id="id_nameout"></span>
+           </div>
+            <form id="id_form">
+                <div>
+                    <span>
+                        <h2>What is your name:</h2> 
+                    </span>
+                    <span>
+                        <input type="text" name="name"        
+                                         id="id_name"/>
+                    </span>
+                </div>
+                <div>
+                    <input type="submit" value="Enter"
+                                          id="id_enter"/>
+                </div>
+            </form>  
+            <script
+               src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+         </script>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    setupPage();
+                });
+                function setupPage(){
+                    $('#id_hello').hide();
+                    $('#id_form').submit(onSubmitClicked);
+                    enterbutton();
+                }
+                function onSubmitClicked(event){
+                    $('#id_nameout').text($('#id_name').val());
+                    $('#id_hello').show();
+                    $('#id_form').hide();
+                    event.preventDefault();
+                }
+                function enterbutton(){
+                    $(function() {
+                        $("form input").keypress(function (e) {
+                        if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+                            $('#id_enter').click();
+                            return false;
+                        } else {
+                            return true;
+                        }
+                    });
+                });
+            }
+            </script> 
+            <style> body {background-color: pink;}</style>
+        </body>
+    </html>
+```
+
+Flow can be Found : 
 ### 7. This flow describes how to build a chat service in a browser 
 1. Drag the http node and create a Get Request 
 ```
