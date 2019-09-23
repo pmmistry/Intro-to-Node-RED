@@ -166,7 +166,8 @@ return msg;
 
 ![ChatService](/Screenshots/Chat.png?raw=true "Chat Service")
 ![ChatService2](/Screenshots/ChatService.png?raw=true "Chat Service on the Browser")
-**Import flow from here :** 
+**Import flow from here :** [ChatService](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/chatService.flow)
+
 
 ### 8. Simple Dashboard
 This flow describes how to build a UI with the use of `node-red-dashboard` nodes 
