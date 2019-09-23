@@ -12,7 +12,7 @@ It provides lot of tools and plugins which supports almost everything related to
  	- Concept of flows and nodes 
  	- Input & Outputs 
  	- Debug & ingect nodes 
-4. More Node Red Resources 
+4. [More Node Red Resources](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Docs/NodeRedResources.pdf)
 
 
 Presenter: [Pooja Mistry](https://github.com/pmmistry)
