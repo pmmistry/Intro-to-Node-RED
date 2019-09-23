@@ -26,7 +26,7 @@ Presenter: [Pooja Mistry](https://github.com/pmmistry)
 4. Press the Red Deploy button in the top Right corner. Press the blue Inject. The Hello World string will appear in the Debug area.
 ![Hello World](/Screenshots/HelloWorld-Inject-annotated.png?raw=true "Hello World")
 
-flow can be found [HelloWorld](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/helloWorld.flow)
+**Import flow from here :** [HelloWorld](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/helloWorld.flow)
 
 ### 2. This flow describes how to use the function node to perform a function
 1. Drag the function node from the palette and connect it between the inject node and debug node
@@ -41,7 +41,7 @@ This example replaces World with `Everyone, I hope you enjoy Node Red  `
 3. Press red Deploy on the right corner and see : 
 ![Hello Replace](/Screenshots/HelloWorldReplace.png?raw=true "Hello World Replace")
 
-flow can be found in [HelloWorldReplace](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/helloReplace.flow)
+**Import flow from here :** [HelloWorldReplace](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/helloReplace.flow)
 
 
 ### 3. This flow describes how to use the language translation node:
@@ -51,7 +51,7 @@ flow can be found in [HelloWorldReplace](https://github.com/pmmistry/Intro-to-No
 4. Press the Red Deploy button in the top Right corner. Press the blue Inject. The string from the inject node will appear in the Debug area along with the translated text.
 ![Language Translation](/Screenshots/IchbineinBerliner-Translate-annotated.png?raw=true "Ich bin ein Berliner")
 
-flow can be found [HelloWorldGerman](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/helloWorldGerman.flow)
+**Import flow from here :** [HelloWorldGerman](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/helloWorldGerman.flow)
 
 
 ### 4 . Hello World in Spanish - Convert Text to Speech 
@@ -59,7 +59,7 @@ flow can be found [HelloWorldGerman](https://github.com/pmmistry/Intro-to-Node-R
 
 ![](https://paper-attachments.dropbox.com/s_47B19C1398BE4DA15B3A75EC8B94D22D2E4AA20C6FFB4054F0EB3B366D945110_1569262059697_Screen+Shot+2019-09-23+at+1.55.20+PM.png)
 
-flow can be found 
+**Import flow from here :**
 
 ### 5. This flow describes how to use the Weather Insights , Language translator , and Speech to Text
 
@@ -71,7 +71,7 @@ This flow speaks the Berlin weather forecast in German
 	- Plays the weather forecast in a German voice
 ![Weather Forecast](/Screenshots/WeatherForecastinGerman.png?raw=true "Speak the Berlin weather forecast in German")
 
-flow can be found in [Weather](https://github.com/pmmistry/Intro-to-Node-RED/tree/master/Flows)
+ **Import flow from here :** [Weather](https://github.com/pmmistry/Intro-to-Node-RED/tree/master/Flows)
 
 ### 6. Webpage 
 ![](https://paper-attachments.dropbox.com/s_47B19C1398BE4DA15B3A75EC8B94D22D2E4AA20C6FFB4054F0EB3B366D945110_1569262682714_Screen+Shot+2019-09-23+at+2.17.45+PM.png)
@@ -143,7 +143,8 @@ Template Code :
     </html>
 ```
 
-Flow can be Found : 
+**Import flow from here : **
+
 ### 7. This flow describes how to build a chat service in a browser 
 1. Drag the http node and create a Get Request 
 ```
@@ -165,7 +166,34 @@ return msg;
 
 ![ChatService](/Screenshots/Chat.png?raw=true "Chat Service")
 ![ChatService2](/Screenshots/ChatService.png?raw=true "Chat Service on the Browser")
+**Import flow from here : **
 
+### 8. Simple Dashboard
+This flow describes how to build a UI with the use of `node-red-dashboard` nodes 
+We will need to install `node-red-dashboard` from manage pallet 
+![](https://paper-attachments.dropbox.com/s_49EBF2EB36746BBC00471930A737A626223590B94A1CAFB75A0CD643C5F6FAAB_1569263698690_Screen+Shot+2019-09-23+at+2.23.21+PM.png)
+
+**Import flow from here** : 
+
+### 9. Sentiment Dashboard
+This flow describes how we can measure the sentiment of incoming text 
+![](https://paper-attachments.dropbox.com/s_49EBF2EB36746BBC00471930A737A626223590B94A1CAFB75A0CD643C5F6FAAB_1569263733561_Screen+Shot+2019-09-23+at+2.33.39+PM.png)
+
+**Import flow from here** : 
+
+### 10. Twitter Input 
+1. Drag the twitter input node from the palette and connect it with the debug message node 
+2. Double click on the twitter node and set up twitter authentication 
+    - Steps to set up Twitter 
+    - Click on the little pencil button next to Twitter ID field 
+    - Add Twitter ID 
+    - Create your own application at ` developer.twitter.com/en/apps` 
+    - Submit your API Keys and Access Tokens 
+3. Once Twitter set up is complete you can receive tweets from hashtags, ids and any strings 
+4. Press red Deploy button and see : 
+![Twitter](/Screenshots/TwitterExample.png?raw=true "Twitter Example")
+
+flow can be found in [Twitter Example](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/twitter.flow)
 
 
 
