@@ -207,7 +207,7 @@ This flow describes how we can measure the sentiment of incoming text
 ![SpaceStationFlow](/Screenshots/SpaceStationFlow.png?raw=true "Space Station Flow")
 ![MapDashboard](/Screenshots/MapDashboard.png?raw=true "MapDashboard")
 
-**Import flow from here :** [Space Station Example](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/twitter.flow)
+**Import flow from here :** [Space Station Example](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/SpaceStation.flow)
 
 
 
