@@ -203,5 +203,11 @@ This flow describes how we can measure the sentiment of incoming text
 ### 11. Mapping International Space Station Location  
 1. Injects worldmap into dashboard template node 
 2. Uses [ISS Location Now API](http://api.open-notify.org/) to get live location of International Space Station over Earth 
-3. Maps ISS location tracks on World Map
+3. Maps ISS location tracks on World Map 
+![SpaceStationFlow](/Screenshots/SpaceStationFlow.png?raw=true "Space Station Flow")
+![MapDashboard](/Screenshots/MapDashboard.png?raw=true "MapDashboard")
+
+**Import flow from here :** [Space Station Example](https://github.com/pmmistry/Intro-to-Node-RED/blob/master/Flows/twitter.flow)
+
+
 
